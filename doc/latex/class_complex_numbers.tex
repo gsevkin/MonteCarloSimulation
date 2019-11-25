@@ -1,0 +1,210 @@
+\hypertarget{class_complex_numbers}{\section{Complex\-Numbers Class Reference}
+\label{class_complex_numbers}\index{Complex\-Numbers@{Complex\-Numbers}}
+}
+
+
+{\ttfamily \#include $<$Complex\-Numbers.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_complex_numbers_abe7f2d867272b9f2081450eb840eb392}{Complex\-Numbers} ()
+\item 
+\hyperlink{class_complex_numbers_a54483a46b7000f03c0d42fb14119727c}{Complex\-Numbers} (double x, double y, int type=1)
+\item 
+\hyperlink{class_complex_numbers_a65a69574d83b3606ecc2e5577b87db25}{Complex\-Numbers} (const \hyperlink{class_complex_numbers}{Complex\-Numbers} \&other)
+\item 
+\hyperlink{class_complex_numbers}{Complex\-Numbers} \& \hyperlink{class_complex_numbers_a8ffc65beb804040401bf11d2726e1e0b}{operator=} (const \hyperlink{class_complex_numbers}{Complex\-Numbers} \&other)
+\item 
+bool \hyperlink{class_complex_numbers_a7bb3e8e24b86f9546f6db5c1613793d7}{operator==} (const \hyperlink{class_complex_numbers}{Complex\-Numbers} \&rhs)
+\item 
+void \hyperlink{class_complex_numbers_a460557b8149ac7e5e31fcc50bf42cdec}{Sum} (\hyperlink{class_complex_numbers}{Complex\-Numbers} \&)
+\item 
+void \hyperlink{class_complex_numbers_afa1a23565f5d3e475049f95ee0d61650}{Divide} (\hyperlink{class_complex_numbers}{Complex\-Numbers} \&)
+\item 
+void \hyperlink{class_complex_numbers_a18fbc37a7e3876d4b6eb4290f40a2358}{Multiply} (\hyperlink{class_complex_numbers}{Complex\-Numbers} \&)
+\item 
+double \hyperlink{class_complex_numbers_a6c19294ed456b1ed135e2e08c8aa0fdc}{Magnitude} ()
+\item 
+void \hyperlink{class_complex_numbers_a531304f986e73fd486c6f4df9f5c0920}{Subtract} (\hyperlink{class_complex_numbers}{Complex\-Numbers} \&)
+\item 
+void \hyperlink{class_complex_numbers_a2056e2c3a7ef79765c58b14d4b17f9cf}{Compute\-Polar} ()
+\item 
+void \hyperlink{class_complex_numbers_aaf5da3b3d268e59f2139a32518cd029a}{Compute\-Cartesian} ()
+\item 
+\hyperlink{class_complex_numbers}{Complex\-Numbers} \hyperlink{class_complex_numbers_a67784bfb7c45f55f876dd2cb724d8f64}{Complex\-Conjugate} ()
+\item 
+void \hyperlink{class_complex_numbers_aeb1ef4510972979b6b5095033c59325f}{Power} (double)
+\item 
+void \hyperlink{class_complex_numbers_ad28dccab27914091a8a4d8e8e0719b54}{Root} (double)
+\item 
+double \hyperlink{class_complex_numbers_a79815603bc8600d82cfb0116d54eed0c}{Normalize\-Angle} (double angle)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_complex_numbers_aa8b389301876673ec9bd8d2ad28c5a7f}{\-\_\-x}
+\begin{DoxyCompactList}\small\item\em Real part of cartesian form. \end{DoxyCompactList}\item 
+double \hyperlink{class_complex_numbers_aa11ffc8edeb15cbc67bc89edc9ed137d}{\-\_\-y}
+\begin{DoxyCompactList}\small\item\em Imaginary part of cartesian form. \end{DoxyCompactList}\item 
+double \hyperlink{class_complex_numbers_a6b9cd38ec145deff3e5577e2361b189d}{\-\_\-r}
+\begin{DoxyCompactList}\small\item\em Radius of polar form. \end{DoxyCompactList}\item 
+double \hyperlink{class_complex_numbers_a1fcf58ebb224357057a2c7d4701e372c}{\-\_\-phi}
+\begin{DoxyCompactList}\small\item\em Angle of polar form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_complex_numbers_abe7f2d867272b9f2081450eb840eb392}{\index{Complex\-Numbers@{Complex\-Numbers}!Complex\-Numbers@{Complex\-Numbers}}
+\index{Complex\-Numbers@{Complex\-Numbers}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Complex\-Numbers}]{\setlength{\rightskip}{0pt plus 5cm}Complex\-Numbers\-::\-Complex\-Numbers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_abe7f2d867272b9f2081450eb840eb392}
+Empty constructor for \hyperlink{class_complex_numbers}{Complex\-Numbers} class It initializes Complex\-Number object with x=0 and y=0 \hypertarget{class_complex_numbers_a54483a46b7000f03c0d42fb14119727c}{\index{Complex\-Numbers@{Complex\-Numbers}!Complex\-Numbers@{Complex\-Numbers}}
+\index{Complex\-Numbers@{Complex\-Numbers}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Complex\-Numbers}]{\setlength{\rightskip}{0pt plus 5cm}Complex\-Numbers\-::\-Complex\-Numbers (
+\begin{DoxyParamCaption}
+\item[{double}]{x, }
+\item[{double}]{y, }
+\item[{int}]{type = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a54483a46b7000f03c0d42fb14119727c}
+Constructor for \hyperlink{class_complex_numbers}{Complex\-Numbers} class It initializes Complex\-Number object with given x and y, For initializing with euler or polar form, type should be specified as type!=1 \hypertarget{class_complex_numbers_a65a69574d83b3606ecc2e5577b87db25}{\index{Complex\-Numbers@{Complex\-Numbers}!Complex\-Numbers@{Complex\-Numbers}}
+\index{Complex\-Numbers@{Complex\-Numbers}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Complex\-Numbers}]{\setlength{\rightskip}{0pt plus 5cm}Complex\-Numbers\-::\-Complex\-Numbers (
+\begin{DoxyParamCaption}
+\item[{const {\bf Complex\-Numbers} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a65a69574d83b3606ecc2e5577b87db25}
+Copy constructor for \hyperlink{class_complex_numbers}{Complex\-Numbers} class 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_complex_numbers_a67784bfb7c45f55f876dd2cb724d8f64}{\index{Complex\-Numbers@{Complex\-Numbers}!Complex\-Conjugate@{Complex\-Conjugate}}
+\index{Complex\-Conjugate@{Complex\-Conjugate}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Complex\-Conjugate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Complex\-Numbers} Complex\-Numbers\-::\-Complex\-Conjugate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a67784bfb7c45f55f876dd2cb724d8f64}
+Function for computing complex conjugate, it returns the result as a \hyperlink{class_complex_numbers}{Complex\-Numbers} object \hypertarget{class_complex_numbers_aaf5da3b3d268e59f2139a32518cd029a}{\index{Complex\-Numbers@{Complex\-Numbers}!Compute\-Cartesian@{Compute\-Cartesian}}
+\index{Compute\-Cartesian@{Compute\-Cartesian}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Compute\-Cartesian}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Compute\-Cartesian (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_aaf5da3b3d268e59f2139a32518cd029a}
+Function for computing cartesian form \hypertarget{class_complex_numbers_a2056e2c3a7ef79765c58b14d4b17f9cf}{\index{Complex\-Numbers@{Complex\-Numbers}!Compute\-Polar@{Compute\-Polar}}
+\index{Compute\-Polar@{Compute\-Polar}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Compute\-Polar}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Compute\-Polar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a2056e2c3a7ef79765c58b14d4b17f9cf}
+Function for computing polar form Since polar and euler form parameters are equal, it can be used to compute euler form \hypertarget{class_complex_numbers_afa1a23565f5d3e475049f95ee0d61650}{\index{Complex\-Numbers@{Complex\-Numbers}!Divide@{Divide}}
+\index{Divide@{Divide}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Divide}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Divide (
+\begin{DoxyParamCaption}
+\item[{{\bf Complex\-Numbers} \&}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_afa1a23565f5d3e475049f95ee0d61650}
+Divide function \hypertarget{class_complex_numbers_a6c19294ed456b1ed135e2e08c8aa0fdc}{\index{Complex\-Numbers@{Complex\-Numbers}!Magnitude@{Magnitude}}
+\index{Magnitude@{Magnitude}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Magnitude}]{\setlength{\rightskip}{0pt plus 5cm}double Complex\-Numbers\-::\-Magnitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a6c19294ed456b1ed135e2e08c8aa0fdc}
+Function for computing magnitude \hypertarget{class_complex_numbers_a18fbc37a7e3876d4b6eb4290f40a2358}{\index{Complex\-Numbers@{Complex\-Numbers}!Multiply@{Multiply}}
+\index{Multiply@{Multiply}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Multiply}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf Complex\-Numbers} \&}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a18fbc37a7e3876d4b6eb4290f40a2358}
+Multiply function \hypertarget{class_complex_numbers_a79815603bc8600d82cfb0116d54eed0c}{\index{Complex\-Numbers@{Complex\-Numbers}!Normalize\-Angle@{Normalize\-Angle}}
+\index{Normalize\-Angle@{Normalize\-Angle}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Normalize\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}double Complex\-Numbers\-::\-Normalize\-Angle (
+\begin{DoxyParamCaption}
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a79815603bc8600d82cfb0116d54eed0c}
+This function is a helper function for Root and Power functions \hypertarget{class_complex_numbers_a8ffc65beb804040401bf11d2726e1e0b}{\index{Complex\-Numbers@{Complex\-Numbers}!operator=@{operator=}}
+\index{operator=@{operator=}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Complex\-Numbers} \& Complex\-Numbers\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Complex\-Numbers} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a8ffc65beb804040401bf11d2726e1e0b}
+'=' operator for \hyperlink{class_complex_numbers}{Complex\-Numbers} class \hypertarget{class_complex_numbers_a7bb3e8e24b86f9546f6db5c1613793d7}{\index{Complex\-Numbers@{Complex\-Numbers}!operator==@{operator==}}
+\index{operator==@{operator==}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Complex\-Numbers\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Complex\-Numbers} \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a7bb3e8e24b86f9546f6db5c1613793d7}
+'==' operator for \hyperlink{class_complex_numbers}{Complex\-Numbers} class \hypertarget{class_complex_numbers_aeb1ef4510972979b6b5095033c59325f}{\index{Complex\-Numbers@{Complex\-Numbers}!Power@{Power}}
+\index{Power@{Power}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Power}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Power (
+\begin{DoxyParamCaption}
+\item[{double}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_aeb1ef4510972979b6b5095033c59325f}
+Function for n power \hypertarget{class_complex_numbers_ad28dccab27914091a8a4d8e8e0719b54}{\index{Complex\-Numbers@{Complex\-Numbers}!Root@{Root}}
+\index{Root@{Root}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Root}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Root (
+\begin{DoxyParamCaption}
+\item[{double}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_ad28dccab27914091a8a4d8e8e0719b54}
+Function for n root \hypertarget{class_complex_numbers_a531304f986e73fd486c6f4df9f5c0920}{\index{Complex\-Numbers@{Complex\-Numbers}!Subtract@{Subtract}}
+\index{Subtract@{Subtract}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Subtract}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Subtract (
+\begin{DoxyParamCaption}
+\item[{{\bf Complex\-Numbers} \&}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a531304f986e73fd486c6f4df9f5c0920}
+Subtraction function \hypertarget{class_complex_numbers_a460557b8149ac7e5e31fcc50bf42cdec}{\index{Complex\-Numbers@{Complex\-Numbers}!Sum@{Sum}}
+\index{Sum@{Sum}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{Sum}]{\setlength{\rightskip}{0pt plus 5cm}void Complex\-Numbers\-::\-Sum (
+\begin{DoxyParamCaption}
+\item[{{\bf Complex\-Numbers} \&}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_complex_numbers_a460557b8149ac7e5e31fcc50bf42cdec}
+Summation function 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_complex_numbers_a1fcf58ebb224357057a2c7d4701e372c}{\index{Complex\-Numbers@{Complex\-Numbers}!\-\_\-phi@{\-\_\-phi}}
+\index{\-\_\-phi@{\-\_\-phi}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{\-\_\-phi}]{\setlength{\rightskip}{0pt plus 5cm}double Complex\-Numbers\-::\-\_\-phi}}\label{class_complex_numbers_a1fcf58ebb224357057a2c7d4701e372c}
+
+
+Angle of polar form. 
+
+\hypertarget{class_complex_numbers_a6b9cd38ec145deff3e5577e2361b189d}{\index{Complex\-Numbers@{Complex\-Numbers}!\-\_\-r@{\-\_\-r}}
+\index{\-\_\-r@{\-\_\-r}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{\-\_\-r}]{\setlength{\rightskip}{0pt plus 5cm}double Complex\-Numbers\-::\-\_\-r}}\label{class_complex_numbers_a6b9cd38ec145deff3e5577e2361b189d}
+
+
+Radius of polar form. 
+
+\hypertarget{class_complex_numbers_aa8b389301876673ec9bd8d2ad28c5a7f}{\index{Complex\-Numbers@{Complex\-Numbers}!\-\_\-x@{\-\_\-x}}
+\index{\-\_\-x@{\-\_\-x}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}double Complex\-Numbers\-::\-\_\-x}}\label{class_complex_numbers_aa8b389301876673ec9bd8d2ad28c5a7f}
+
+
+Real part of cartesian form. 
+
+\hypertarget{class_complex_numbers_aa11ffc8edeb15cbc67bc89edc9ed137d}{\index{Complex\-Numbers@{Complex\-Numbers}!\-\_\-y@{\-\_\-y}}
+\index{\-\_\-y@{\-\_\-y}!ComplexNumbers@{Complex\-Numbers}}
+\subsubsection[{\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}double Complex\-Numbers\-::\-\_\-y}}\label{class_complex_numbers_aa11ffc8edeb15cbc67bc89edc9ed137d}
+
+
+Imaginary part of cartesian form. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_complex_numbers_8h}{Complex\-Numbers.\-h}\item 
+src/\hyperlink{_complex_numbers_8cpp}{Complex\-Numbers.\-cpp}\end{DoxyCompactItemize}
